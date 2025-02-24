@@ -1,0 +1,10 @@
+n = str(input('Digite \033[1mseu nome completo: \033[m'))
+nf = n.strip()
+print('O nome com todas as letras \033[7mmaiúsculas\033[m é {}'.format(nf.upper()))
+print('O nome com todas as letras \033[34mminúsculas\033[m é {}'.format(nf.lower()))
+letraseespacos = len(nf)
+espacos = nf.count(' ')
+letras = letraseespacos - espacos
+print('O nome tem \033[35;1m{}\033[m \033[1;7;35mletras\033[m ao todo'.format(letras))
+palavras = nf.split()
+print('Seu \033[1mprimeiro nome, {}, tem {} letras'.format(palavras[0], len(palavras[0])))
